@@ -10,22 +10,23 @@ Exercise #2
 Using the loop provided for you below, use the array push method to insert the numbers 1 to 10 into the array.
 */
 
-for(var i=0;i<10;i++){
-  var myArray = ["2", "3", "4", "5", "6", "7", "8", "9",]
-  myArray[0] = "1"
-  myArray[9] = "10"
-    //use the array push() method here.
+for(var i=0;i<10;i++) {
+    console.log(i);
 }
-
+    
+    //use the array push() method here.
+    var myArray = new Array();
+    
+    myArray.push('1');
+    myArray.push('2', '3', '4', '5', '6', '7', '8', '9');
+    var length = myArray.push('10');
+       
 
 /*
 Exercise #3
 Test that you used the array push method correctly by console logging the first item in the array. Console log the last item in the array afterwards.
 */
-console.log(myArray[0]);
-console.log(myArray[9]);
-
-
+console.log(myArray);
 /*
 Exercise #5
 Create an empty object and assign it to the variable car below.
