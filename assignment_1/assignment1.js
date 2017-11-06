@@ -1,4 +1,4 @@
-/*
+/*  
 Exercise #1
 Create a variable named "numbers" and assign an empty array to it.
 */
@@ -11,22 +11,26 @@ Using the loop provided for you below, use the array push method to insert the n
 */
 
 for(var i=0;i<10;i++) {
-    console.log(i);
+   
 }
     
     //use the array push() method here.
-    var myArray = new Array();
-    
-    myArray.push('1');
-    myArray.push('2', '3', '4', '5', '6', '7', '8', '9');
-    var length = myArray.push('10');
-       
-
+    var myArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    myArray.push('10'); 
 /*
 Exercise #3
 Test that you used the array push method correctly by console logging the first item in the array. Console log the last item in the array afterwards.
 */
-console.log(myArray);
+console.log(myArray[0]);
+console.log(myArray[9]);
+
+/* 
+Inserting the entire array into the loop:
+*/
+    for (var i=0; i < myArray.length; i++) {
+        console.log(myArray[i]);
+      }
+
 /*
 Exercise #5
 Create an empty object and assign it to the variable car below.
@@ -38,3 +42,4 @@ var car = {
 
     console.log(car.colour);
 
+    
